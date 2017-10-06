@@ -20,6 +20,12 @@
             <Component Id="cmp5B125E563C968FF532E4F9D5F58C247B" Guid="*">
                 <File Id="filB9C419462E2A0EB597E1691FFF5DB7D0" KeyPath="yes" Source="$(var.HeatTransformation.TargetDir)\HeatTransformation.vshost.exe.manifest" />
             </Component>
+            <Component Id="cmp17711A4A42FA4BBC80BD3B5F6E97D3C6" Guid="*">
+                <File Id="fil7E878ACBD88B0850C669E0B04742B178" KeyPath="yes" Source="$(var.HeatTransformation.TargetDir)\myApp.exe.config" />
+            </Component>
+            <Component Id="cmp85C2A789FBA8A4C45FAE90D48638F7EF" Guid="*">
+                <File Id="filC34B1720563F859B2E3115C6E61B5248" KeyPath="yes" Source="$(var.HeatTransformation.TargetDir)\readonly.txt" ReadOnly="yes" />
+            </Component>
         </DirectoryRef>
     </Fragment>
     <Fragment>
@@ -30,6 +36,8 @@
             <ComponentRef Id="cmpF01C10C8E07B19D4242083C59FAA2129" />
             <ComponentRef Id="cmp4CEFE37D6AB317F0FC688113E74EE424" />
             <ComponentRef Id="cmp5B125E563C968FF532E4F9D5F58C247B" />
+            <ComponentRef Id="cmp17711A4A42FA4BBC80BD3B5F6E97D3C6" />
+            <ComponentRef Id="cmp85C2A789FBA8A4C45FAE90D48638F7EF" />
         </ComponentGroup>
     </Fragment>
 </Wix>
