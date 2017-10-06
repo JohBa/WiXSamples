@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>3.10</ProductVersion>
-    <ProjectGuid>35f9966b-b382-451a-810c-2fc283f63f18</ProjectGuid>
+    <ProjectGuid>{48b4f8b2-4c45-4ab1-a344-dba4041feb8a}</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
     <OutputName>Installer</OutputName>
     <OutputType>Package</OutputType>
@@ -31,20 +31,20 @@
     <Content Include="transform.xslt" />
   </ItemGroup>
   <ItemGroup>
+    <WixExtension Include="WixUIExtension">
+      <HintPath>$(WixExtDir)\WixUIExtension.dll</HintPath>
+      <Name>WixUIExtension</Name>
+    </WixExtension>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\HeatTransformation\HeatTransformation.csproj">
       <Name>HeatTransformation</Name>
-      <Project>{0eee9702-2cbd-4057-a9df-acadd7442b92}</Project>
+      <Project>{55e680b0-ac25-4685-a6ad-8fa743bd8e28}</Project>
       <Private>True</Private>
       <DoNotHarvest>True</DoNotHarvest>
       <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
       <RefTargetDir>INSTALLFOLDER</RefTargetDir>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WixExtension Include="WixUIExtension">
-      <HintPath>$(WixExtDir)\WixUIExtension.dll</HintPath>
-      <Name>WixUIExtension</Name>
-    </WixExtension>
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" />
   <!--
@@ -56,6 +56,6 @@
 	</Target>
 	-->
   <Target Name="BeforeBuild">
-    <Exec Command="&quot;$(WIX)bin\heat.exe&quot; dir $(SolutionDir)bin\$(Configuration) -t transform.xslt -var var.HeatTransformation.TargetDir -dr INSTALLLOCATION -cg BinariesCG -ag -scom -sreg -sfrag -srd -o $(ProjectDir)Fragments\BinariesFragment.wxs" />
+    <Exec Command="&quot;$(WIX)bin\heat.exe&quot; dir $(SolutionDir)HeatTransformation\bin\$(Configuration) -t $(SolutionDir)Installer\transform.xslt -var var.HeatTransformation.TargetDir -dr INSTALLLOCATION -cg BinariesCG -ag -scom -sreg -sfrag -srd -o $(ProjectDir)Fragments\BinariesFragment.wxs" />
   </Target>
 </Project>

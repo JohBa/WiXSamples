@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0EEE9702-2CBD-4057-A9DF-ACADD7442B92}</ProjectGuid>
+    <ProjectGuid>{55E680B0-AC25-4685-A6AD-8FA743BD8E28}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HeatTransformation</RootNamespace>
