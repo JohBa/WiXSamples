@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLLOCATION">
+            <Component Id="cmp8D1FE4BF04FCC20CF3256AAB82D23CF4" Guid="*">
+                <File Id="fil0E61385C1FB320C587615B8F76B77776" KeyPath="yes" Source="$(var.HeatTransformation.TargetDir)\HeatTransformation.exe" />
+            </Component>
+            <Component Id="cmpE6BCAA15A16E60AB0D9737474CC1838B" Guid="*">
+                <File Id="fil6F82DA35B86E2587D8DD91D1CA7A767A" KeyPath="yes" Source="$(var.HeatTransformation.TargetDir)\HeatTransformation.exe.config" />
+            </Component>
+            <Component Id="cmpA34C3906BFE0027AC7B1862B27E69DA5" Guid="*">
+                <File Id="fil7F000DCD6DC1114AA1A80A5D967595E5" KeyPath="yes" Source="$(var.HeatTransformation.TargetDir)\HeatTransformation.pdb" />
+            </Component>
+            <Component Id="cmpF01C10C8E07B19D4242083C59FAA2129" Guid="*">
+                <File Id="fil58EA321F95E19015AB7E421503092184" KeyPath="yes" Source="$(var.HeatTransformation.TargetDir)\HeatTransformation.vshost.exe" />
+            </Component>
+            <Component Id="cmp4CEFE37D6AB317F0FC688113E74EE424" Guid="*">
+                <File Id="filCAD2536CC9CA8628B7B71EA1D86CD0D9" KeyPath="yes" Source="$(var.HeatTransformation.TargetDir)\HeatTransformation.vshost.exe.config" />
+            </Component>
+            <Component Id="cmp5B125E563C968FF532E4F9D5F58C247B" Guid="*">
+                <File Id="filB9C419462E2A0EB597E1691FFF5DB7D0" KeyPath="yes" Source="$(var.HeatTransformation.TargetDir)\HeatTransformation.vshost.exe.manifest" />
+            </Component>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="BinariesCG">
+            <ComponentRef Id="cmp8D1FE4BF04FCC20CF3256AAB82D23CF4" />
+            <ComponentRef Id="cmpE6BCAA15A16E60AB0D9737474CC1838B" />
+            <ComponentRef Id="cmpA34C3906BFE0027AC7B1862B27E69DA5" />
+            <ComponentRef Id="cmpF01C10C8E07B19D4242083C59FAA2129" />
+            <ComponentRef Id="cmp4CEFE37D6AB317F0FC688113E74EE424" />
+            <ComponentRef Id="cmp5B125E563C968FF532E4F9D5F58C247B" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>

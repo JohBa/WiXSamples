@@ -5,16 +5,30 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeatTransformation", "HeatTransformation.csproj", "{0EEE9702-2CBD-4057-A9DF-ACADD7442B92}"
 EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Installer", "..\Installer\Installer.wixproj", "{35F9966B-B382-451A-810C-2FC283F63F18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0EEE9702-2CBD-4057-A9DF-ACADD7442B92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0EEE9702-2CBD-4057-A9DF-ACADD7442B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EEE9702-2CBD-4057-A9DF-ACADD7442B92}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0EEE9702-2CBD-4057-A9DF-ACADD7442B92}.Debug|x86.Build.0 = Debug|Any CPU
 		{0EEE9702-2CBD-4057-A9DF-ACADD7442B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EEE9702-2CBD-4057-A9DF-ACADD7442B92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EEE9702-2CBD-4057-A9DF-ACADD7442B92}.Release|x86.ActiveCfg = Release|Any CPU
+		{0EEE9702-2CBD-4057-A9DF-ACADD7442B92}.Release|x86.Build.0 = Release|Any CPU
+		{35F9966B-B382-451A-810C-2FC283F63F18}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{35F9966B-B382-451A-810C-2FC283F63F18}.Debug|x86.ActiveCfg = Debug|x86
+		{35F9966B-B382-451A-810C-2FC283F63F18}.Debug|x86.Build.0 = Debug|x86
+		{35F9966B-B382-451A-810C-2FC283F63F18}.Release|Any CPU.ActiveCfg = Release|x86
+		{35F9966B-B382-451A-810C-2FC283F63F18}.Release|x86.ActiveCfg = Release|x86
+		{35F9966B-B382-451A-810C-2FC283F63F18}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
